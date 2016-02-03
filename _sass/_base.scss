@@ -1,3 +1,11 @@
+$bg-image: "/images/bg-image.jpg";
+
+body {
+  background: $white url($bg-image) no-repeat !important;
+  background-size: contain !important;
+  background-position-y: 51px !important;
+}
+
 .nav-logo {
   height: 25px;
   margin-top: 5px;
