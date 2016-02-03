@@ -5,6 +5,11 @@
 // Our variables
 
 @import
+  "fonts",
   "foundation/foundation",
+  "settings",
   "base"
 ;
+
+@include foundation-everything;
+@include foundation-flex-grid;
