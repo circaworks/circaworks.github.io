@@ -1,7 +1,18 @@
 $bg-image: "/images/bg-image.jpg";
 
+html {
+  background-color: $light-gray;
+  background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  -webkit-background-size: 3px 3px;
+  -moz-background-size: 3px 3px;
+  background-size: 30px 30px;
+}
+
 body {
-  background: $white url($bg-image) no-repeat !important;
+  background: url($bg-image) no-repeat !important;
   background-size: contain !important;
   background-position-y: 51px !important;
 }
@@ -17,5 +28,30 @@ body {
   font-size: 0.8rem;
   &:hover, .active {
     color: $secondary-color;
+  }
+}
+
+.main {
+  margin-top: 80px;
+  .avatar-container {
+    display: inline-block;
+    border: 6px solid $white;
+    background: $white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    .avatar {
+      height: 210px;
+      width: 210px;
+      border-radius: 3px;
+    }
+  }
+  .avatar-details {
+    color: $white;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 24px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    h4 {
+      margin-bottom: 0;
+    }
   }
 }

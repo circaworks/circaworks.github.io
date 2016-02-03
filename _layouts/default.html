@@ -5,8 +5,11 @@
 
   <body>
     {% include navigation-bar.html %}
-
-    {{ content }}
+    <div class="row main align-center">
+      <div class="column small-9">
+        {{ content }}
+      </div>
+    </div>
 
     {% include footer.html %}
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
