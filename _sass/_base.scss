@@ -53,8 +53,7 @@ p {
   .avatar-container {
     z-index: 1;
     .avatar {
-      height: 230px;
-      width: 230px;
+      max-height: 230px;
       border-radius: $global-radius;
     }
   }
@@ -66,8 +65,10 @@ p {
     padding-top: 5px;
     padding-bottom: 5px;
     flex: 0 0 74%;
-    max-width: 74%;
-    width: 74%;
+    @include breakpoint(large) {
+      max-width: 74%;
+      width: 74%;
+    }
     h4 {
       margin-bottom: 0;
     }
