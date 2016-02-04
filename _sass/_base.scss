@@ -77,6 +77,9 @@ p {
     .left {
       .about-me {
         padding-top: 60px;
+        p {
+          font-size: 1rem !important;
+        }
       }
     }
     .right {
@@ -85,6 +88,53 @@ p {
         background-color: $tertiary-color;
         text-transform: uppercase;
       }
+      .funding {
+        .upper {
+          margin-top: 1rem;
+          margin-bottom: 2rem;
+          .circle-container {
+            margin: 1rem;
+            #circle {
+              position: relative;
+              display: inline-block;
+              canvas {
+                width: 100%;
+              }
+              .icon {
+                position: absolute;
+                left: 50%;
+                top: calc(50% - 4px);
+                padding: 0px;
+                margin: 0px;
+                transform: translate(-50%, -50%);
+                color: $black;
+                font-size: 2rem;
+              }
+            }
+          }
+          p {
+            line-height: 100%;
+            margin-bottom: 0;
+          }
+          h5 {
+            margin-bottom: 0.25rem;
+          }
+        }
+        .details {
+          margin: 1rem -1rem -1rem -1rem;
+          h6 {
+            color: $dark-gray;
+            border-top: 1px solid $medium-gray;
+            text-transform: uppercase;
+            text-align: center;
+            background: $light-gray;
+            padding: 0.5rem;
+            margin: 0;
+          }
+        }
+      }
     }
   }
 }
+
+
