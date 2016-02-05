@@ -21,9 +21,6 @@ $bg-image: "/images/bg-image.jpg";
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: fixed;
-  @include breakpoint(medium only) {
-    background-attachment: scroll;
-  }
   @include breakpoint(rem-calc(639px) down) {
     background-position-y: rem-calc(60px);
   }
@@ -339,11 +336,15 @@ footer {
 
 #circles {
   .circle-container {
+    //background-color: $white;
     .circle-slogan {
       font-size: 1rem
     }
     .circle-nav {
       padding: 0;
+      .callout {
+        border-radius: 0;
+      }
       .back:before {
         position: absolute;
         top: 1.2rem;
@@ -377,23 +378,40 @@ footer {
   }
 }
 
-@include  breakpoint(medium down){
+@include  breakpoint(medium only){
   .body-bg {
     background-color: $light-gray;
+  }
+
+  .circle-container {
+    .medium-full.members {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
+}
+@include breakpoint(medium down){
+  .main .small-11 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .circle-container {
+    background-color: $white;
+
   }
 }
 @include breakpoint(rem-calc(476px) down){
   .main {
     margin-top: 10px;
   }
-  .main .small-11 {
-    flex: 0 0 100%;
-    max-width: 100%;
+  .circle-container {
+    background-color: $light-gray;
     .members {
-      margin-right: 0;
-      margin-left: 0;
+      margin-right: inherit;
+      margin-left: inherit;
       .callout {
         margin-bottom: 0.3rem;
+        border-radius: 0;
         &.member-container {
           padding: 0.5em;
           .avatar-container {
@@ -417,10 +435,6 @@ footer {
         }
       }
     }
-  }
-  .circle-container {
-    //margin: 0;
-    background-color: $light-gray;
     .column {
       padding: 0;
     }
