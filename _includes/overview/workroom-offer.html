@@ -1,0 +1,9 @@
+<div class="callout workroom">
+    <h6>PRIVATE WORKROOM OFFER</h6>
+    {% for offer in page.work-room-offers %}
+    <img class="small-avatar" src="{{ offer.avatar }}" alt="Avatar Image">
+    <div class="direct-chat-text">
+        <p>{{ offer.message }}</p>
+    </div>
+    {% endfor %}
+</div>

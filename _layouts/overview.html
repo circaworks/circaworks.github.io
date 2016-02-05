@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div class="row align-middle">
+    {% include user-details.html %}
+
+    <div class="row profile">
+        <div class="column small-12 large-8 left">
+            <div class="callout about-me">
+                <p>{{ page.about-me }}</p>
+                {% include side-menu.html %}
+            </div>
+            <div class="callout full-about show-for-large">
+                {{ content }}
+            </div>
+        </div>
+
+        <div class="column small-12 large-4 right">
+            {% include overview/funding.html %}
+
+            <div class="callout full-about hide-for-large">
+                {{ content }}
+            </div>
+
+            {% include overview/workroom-offer.html %}
+        </div>
+
+        {% include bottom-menu.html %}
+    </div>
+
+</div>
