@@ -1,6 +1,6 @@
 $bg-image: "/images/bg-image.jpg";
 
-html {
+.html-bg {
   background-color: $light-gray;
   background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
   background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
@@ -11,21 +11,20 @@ html {
   -moz-background-size: 30px 30px;
   background-size: 30px 30px;
   @include breakpoint(rem-calc(320px) down) {
-    font-size: 75% !important;
+    font-size: 75%;
   }
 
 }
 
-body {
-  background-color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-size: contain !important;
-  background-attachment: fixed !important;
+.body-bg {
+  background-color: transparent ;
+  background-repeat: no-repeat ;
+  background-size: contain ;
+  background-attachment: fixed ;
   @include breakpoint(rem-calc(639px) down) {
-    background-position-y: rem-calc(60px) !important;
+    background-position-y: rem-calc(60px) ;
   }
 }
-
 
 .top-bar {
   .nav-logo {
@@ -38,7 +37,8 @@ body {
     text-transform: uppercase;
     font-size: 0.8rem;
     @include breakpoint(medium down) {
-      padding: 0.7rem 0.5rem !important;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
     }
     &:hover, .active {
       color: $secondary-color;
@@ -81,10 +81,9 @@ p {
   font-size: 0.8rem !important;
 }
 
-.callout {
+.column .callout {
   box-shadow: 0 0 2px rgba(0,0,0,0.5);
-  padding: 30px;
-  border: none !important;
+  border: none;
 }
 
 //review this
@@ -98,6 +97,7 @@ p {
   @include breakpoint(small down) {
     margin-top: 30px;
   }
+
   .avatar-container {
     z-index: 1;
     .avatar {
@@ -232,6 +232,32 @@ p {
       }
     }
   }
+
+  .member {
+    .name-container {
+      line-height: 0.5rem;
+      .name, .joined-date{
+        margin: 0;
+      }
+      .joined-date {
+        color: $dark-gray;
+        font-size: 0.5rem;
+      }
+    }
+
+    .amount {
+      display: inline-block;
+      float: left;
+      font-size: 2rem;
+      font-weight: bold;
+      line-height: 1.5rem;
+    }
+    .amount-label {
+      display: block;
+      font-size: 0.5rem;
+      overflow: hidden;
+    }
+  }
 }
 
 #side-menu {
@@ -303,6 +329,87 @@ footer {
     }
     .right a {
       font-size: 1.4rem;
+    }
+  }
+}
+
+
+#circles {
+  .circle-container {
+    .circle-nav {
+      .back:before {
+        position: absolute;
+        top: 1.3rem;
+        left: 1rem;
+        content: "";
+        display: inline-block;
+        /* By using an em scale, the arrows will size with the font */
+        width: 0.8em;
+        height: 0.8em;
+        border-left: 0.3em solid $black;
+        border-bottom: 0.3em solid $black;
+        transform: rotate(45deg);
+        margin-right: 0.5em;
+      }
+      h4 {
+        margin-left: 3rem;
+      }
+    }
+    .member-container {
+      .avatar-container {
+        border: 5px solid $white;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+        .avatar {
+          width: 100%;
+          background-color: $white;
+        }
+      }
+    }
+  }
+}
+
+@include  breakpoint(medium down){
+  .body-bg {
+    background-color: $light-gray;
+  }
+}
+@include breakpoint(rem-calc(476px) down){
+  .main {
+    margin-top: 10px;
+  }
+  .main .small-11 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    .members {
+      margin-right: 0;
+      margin-left: 0;
+      .callout {
+        margin-bottom: 0.3rem;
+        &.member-container {
+          padding: 0.5em;
+          .member {
+            margin: 0;
+            .amount {
+              font-size: 1.5rem;
+              line-height: 1rem;
+            }
+            .amount-label {
+              font-size: 5px;
+              text-transform: uppercase;
+            }
+          }
+          .member-about {
+            margin-top: 1rem;
+          }
+        }
+      }
+    }
+  }
+  .circle-container {
+    //margin: 0;
+    background-color: $light-gray;
+    .column {
+      padding: 0;
     }
   }
 }
