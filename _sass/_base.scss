@@ -382,7 +382,6 @@ footer {
   .body-bg {
     background-color: $light-gray;
   }
-
   .circle-container {
     .medium-full.members {
       margin-left: 1rem;
@@ -397,16 +396,25 @@ footer {
   }
   .circle-container {
     background-color: $white;
-
   }
 }
+
+@include breakpoint(rem-calc(639px) down){
+  .circle-container {
+    .medium-full.members {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
+}
+
 @include breakpoint(rem-calc(476px) down){
   .main {
     margin-top: 10px;
   }
   .circle-container {
     background-color: $light-gray;
-    .members {
+    .medium-full.members {
       margin-right: inherit;
       margin-left: inherit;
       .callout {
