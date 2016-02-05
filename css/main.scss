@@ -11,5 +11,4 @@
   "base"
 ;
 
-@include foundation-everything;
-@include foundation-flex-grid;
+@include foundation-everything(true);
