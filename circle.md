@@ -3,7 +3,7 @@ layout: circles
 permalink: /circles/
 first-name: "Billie"
 last-name: "Jordan"
-avatar: "https://placehold.it/350x350"
+avatar: "http://lorempixel.com/350/350/people/1"
 title: "Performing arts teacher to the elderly"
 address: "Waiheke Island, Auckland"
 about-me: "Help me dedicate my time to the people that appreciate it the most - the Hip Op-eration dance crew. My goal is to be able to give them two full days of my time per week, and I need your help to pull this off."
@@ -14,38 +14,38 @@ target-fund: 300
 circle-members: 13
 days-left: 21
 work-room-offers:
-    - avatar: "https://placehold.it/350x350"
+    - avatar: "http://lorempixel.com/350/350/people/2"
       message: "Lorem ipsum dolor sit amet, ne eius singulis accusata mei, sed gubergren ullamcorper ad. Vim ei latine nominati. Id diam quot quo. No nec reformidans philosophia, usu ei utinam postea delicatissimi. Iudicabit salutatus duo in. Justo alienum no vis."
       
 circle-members-array:
     - name: "Rebecca Leidig"
       about: "Help me dedicate my time to the people that appreciate it the most - the Hip Op-eration dance crew."
-      avatar: "https://placehold.it/350x350"
+      avatar: "http://lorempixel.com/350/350/people/3"
       joined: 2016-01-18 03:49:55 +0800
       funding: 5
     - name: "Rebecca Leidig"
       about: "Help me dedicate my time to the people that appreciate it the most - the Hip Op-eration dance crew."
-      avatar: "https://placehold.it/350x350"
+      avatar: "http://lorempixel.com/350/350/people/4"
       joined: 2016-01-18 03:49:55 +0800
       funding: 5
     - name: "Rebecca Leidig"
       about: "Help me dedicate my time to the people that appreciate it the most - the Hip Op-eration dance crew."
-      avatar: "https://placehold.it/350x350"
+      avatar: "http://lorempixel.com/350/350/people/5"
       joined: 2016-01-18 03:49:55 +0800
       funding: 5
     - name: "Rebecca Leidig"
       about: "Help me dedicate my time to the people that appreciate it the most - the Hip Op-eration dance crew."
-      avatar: "https://placehold.it/350x350"
+      avatar: "http://lorempixel.com/350/350/people/6"
       joined: 2016-01-18 03:49:55 +0800
       funding: 5
     - name: "Rebecca Leidig"
       about: "Help me dedicate my time to the people that appreciate it the most - the Hip Op-eration dance crew."
-      avatar: "https://placehold.it/350x350"
+      avatar: "http://lorempixel.com/350/350/people/7"
       joined: 2016-01-18 03:49:55 +0800
       funding: 5
     - name: "Rebecca Leidig"
       about: "Help me dedicate my time to the people that appreciate it the most - the Hip Op-eration dance crew."
-      avatar: "https://placehold.it/350x350"
+      avatar: "http://lorempixel.com/350/350/people/8"
       joined: 2016-01-18 03:49:55 +0800
       funding: 5
 ---
