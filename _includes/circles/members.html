@@ -1,0 +1,31 @@
+<div class="column small-12 large-6">
+    <div class="callout member-container">
+        <div class="row">
+            <div class="column small-4">
+                <div class="avatar-container">
+                    <img class="avatar" src="{{ member.avatar }}" alt="avatar">
+                </div>
+            </div>
+            <div class="column">
+                <div class="row member align-middle">
+                    <div class="column name-container">
+                        <h6 class="name">{{ member.name }}</h6>
+                        <span class="joined-date">Joined circle {{ member.joined |  date: "%b %-d, %Y" }}</span>
+                    </div>
+                    <div class="column small-3 large-4">
+                        <div class="float-right">
+                            <i class="fi-dollar"></i>
+                            <span class="amount">{{ member.funding }}</span>
+                            <span class="amount-label">funding<br>per cycle</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="member-about">
+                    <small>
+                        {{ member.about }}
+                    </small>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
