@@ -148,7 +148,7 @@ p {
               position: relative;
               display: block;
               @include breakpoint(medium down) {
-                width: 50%;
+                width: 7rem;
               }
               canvas {
                 width: 100%;
