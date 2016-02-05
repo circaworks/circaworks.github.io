@@ -80,8 +80,8 @@ $bg-image: "/images/bg-image.jpg";
   }
 }
 
-p {
-  font-size: 0.8rem !important;
+html p {
+  font-size: 0.8rem;
 }
 
 .column .callout {
@@ -265,8 +265,8 @@ p {
 
 #side-menu {
   position: fixed;
-  margin-left: -11rem;
-  margin-top: -8rem;
+  margin-left: -10rem;
+  margin-top: 13rem;
   .callout {
     padding: 0;
     margin-bottom: 0.3rem;
@@ -339,6 +339,9 @@ footer {
 
 #circles {
   .circle-container {
+    .circle-slogan {
+      font-size: 1rem
+    }
     .circle-nav {
       padding: 0;
       .back:before {

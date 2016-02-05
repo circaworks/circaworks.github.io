@@ -3,7 +3,9 @@ layout: default
 ---
 
 <div id="circles" class="row align-middle">
+    {% include side-menu.html %}
     {% include user-details.html %}
+
     <div class="circle-container">
         <div class="column small-12 large-6 circle-nav hide-for-large">
             <div class="callout">
@@ -13,7 +15,7 @@ layout: default
         </div>
 
         <div class="column small-12">
-            <p class="text-center">Meet <strong>{{ page.circle-members }} circle members</strong> funding {{ page.first-name }}'s good work. All circle members have access to the private workroom.</p>
+            <p class="text-center circle-slogan">Meet <strong>{{ page.circle-members }} circle members</strong> funding {{ page.first-name }}'s good work. All circle members have access to the private workroom.</p>
         </div>
 
         <div class="row members">
