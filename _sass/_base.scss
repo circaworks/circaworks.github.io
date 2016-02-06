@@ -145,7 +145,7 @@ html p {
         .upper {
           margin-top: 1rem;
           margin-bottom: 2rem;
-          .circle-container {
+          .circle-progress-container {
             margin: 1rem;
             #circle {
               position: relative;
@@ -390,12 +390,14 @@ footer {
   }
 }
 @include breakpoint(medium down){
-  .main .small-11 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-  .circle-container {
-    background-color: $white;
+  #circle-id {
+    .main .small-11 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .circle-container {
+      background-color: $white;
+    }
   }
 }
 
@@ -409,8 +411,10 @@ footer {
 }
 
 @include breakpoint(rem-calc(476px) down){
-  .main {
-    margin-top: 10px;
+  #circle-id {
+    .main {
+      margin-top: 10px;
+    }
   }
   .circle-container {
     background-color: $light-gray;
