@@ -120,6 +120,9 @@ html p {
     h4 {
       margin-bottom: 0;
     }
+    h5 {
+      font-size: 0.9rem;
+    }
   }
   .profile {
     @include breakpoint(large) {
